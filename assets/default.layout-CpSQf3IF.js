@@ -1,0 +1,1 @@
+import{j as t,N as o,O as s,F as r}from"./index-iNPh1e4b.js";function e(){return t.jsxs("main",{className:"bg-gradient-to-tl from-[#D40000] via-[#2F0B13] to-[#307260] bg-cover",children:[t.jsx(o,{}),t.jsx(s,{}),t.jsx(r,{})]})}export{e as Component};
