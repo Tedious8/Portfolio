@@ -8,7 +8,7 @@ export const websiteProjectRoute: RouteObject[] = [
     lazy: () => import("../pages/website_project/index"),
   },
   {
-    path: websiteProject.this,
-    lazy: () => import("../pages/website_project/This"),
+    path: websiteProject.Development_of_an_Interactive_Learning_Platform,
+    lazy: () => import("../pages/website_project/Development_of_an_Interactive_Learning_Platform"),
   },
 ];

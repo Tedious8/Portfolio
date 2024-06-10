@@ -7,5 +7,5 @@ export const homeUrl = {
 
 export const websiteProject = {
   index: baseUrl + "/website_project",
-  this: baseUrl + "/website_project/This",
+  Development_of_an_Interactive_Learning_Platform: baseUrl + "/website_project/Development_of_an_Interactive_Learning_Platform_for_Personalized_Recommendation_Mechanism_Based_on_K-Nearest_Neighbors_algorithm_and_AI",
 };

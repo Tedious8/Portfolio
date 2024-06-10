@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import { baseUrl } from "../constants/url";
+import { getBaseUrl } from "../utils/get-base-url";
 
 export default function Navbar(): JSX.Element {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,14 +27,14 @@ export default function Navbar(): JSX.Element {
       ) : (
         <>
           <h1
-            onClick={() => navigate(baseUrl)}
+            onClick={() => navigate(getBaseUrl())}
             className="cursor-pointer text-2xl font-medium text-white"
           >
             Tadeus' Blog
           </h1>
           <ul className="flex gap-14 text-2xl font-medium text-white">
             <li
-              onClick={() => navigate(baseUrl + "/website_project")}
+              onClick={() => navigate(getBaseUrl("/website_project"))}
               className="cursor-pointer"
             >
               Website

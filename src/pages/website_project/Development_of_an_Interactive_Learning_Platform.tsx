@@ -28,8 +28,7 @@ export function Component(): JSX.Element {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, numquam qui animi nisi mollitia esse architecto corrupti inventore cumque veritatis quae! Voluptatum similique quis necessitatibus dolores! Officia nisi dolore praesentium?",
     }),
   ];
-  // const title =
-  //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat voluptatem provident nemo et aspernatur vitae quam velit, numquam maiores dicta aliquam magni cumque earum nam autem quibusdam placeat perferendis.";
+  
   const project = GetProject("This");
   return (
     <>
