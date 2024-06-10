@@ -61,7 +61,7 @@ export default function Slider(props: SliderProps): JSX.Element {
       <figure className="flex items-center justify-around gap-6">
         <IoArrowBack
           onClick={Decrement}
-          className="cursor-pointer text-3xl text-white lg:text-5xl"
+          className={(currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "opacity-100") + " cursor-pointer text-3xl text-white lg:text-5xl"}
         />
         {Images && (
           <div className="rounded-xl bg-[#111]">
@@ -73,10 +73,12 @@ export default function Slider(props: SliderProps): JSX.Element {
             />
           </div>
         )}
-        <IoArrowForward
-          onClick={Increment}
-          className="cursor-pointer text-3xl text-white lg:text-5xl"
-        />
+        {Images && (
+          <IoArrowForward
+            onClick={Increment}
+            className={(currentIndex === Images.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100") + " cursor-pointer text-3xl text-white lg:text-5xl"}
+          />
+        )}
       </figure>
       <div className="flex items-center justify-center gap-2">
         {RenderBullet(0) && (
