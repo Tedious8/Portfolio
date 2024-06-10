@@ -4,6 +4,7 @@ import { ScrollToSection } from "../hooks/scroll-to-section";
 import { GetProjects } from "../utils/get-project";
 import { UseRefHTMLElement } from "../hooks/useRef";
 import ProjectListWebsite from "../components/ProjectListWebsite";
+import { getBaseUrl } from "../utils/get-base-url";
 
 export function Component(): JSX.Element {
   const MyWorkRef = UseRefHTMLElement();
@@ -25,7 +26,7 @@ export function Component(): JSX.Element {
           </h3>
           <div className="flex gap-6">
             <a
-              href="/cv_tadeus_canvas_en.pdf"
+              href={getBaseUrl("/cv_tadeus_canvas_en.pdf")}
               download="cv_tadeus_canvas_en.pdf"
               className="rounded-xl bg-[#00000040] px-5 py-3 text-center text-lg font-extrabold text-white transition duration-500 ease-in-out hover:bg-[#00000080] lg:px-10 lg:py-5 lg:text-2xl"
               style={{ boxShadow: "0px 0px 50px 0px #00000040" }}
