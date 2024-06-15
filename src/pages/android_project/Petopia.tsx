@@ -1,12 +1,6 @@
 import TableOfContent from "../../components/TableOfContent";
 import Article from "../../components/Article";
 import { GetProject } from "../../utils/get-project";
-import {
-  HomePage,
-  ModulePage,
-  ContentPage,
-  QuizPage,
-} from "../../constants/images";
 import { CreateContent } from "../../hooks/create-content";
 import { Content } from "../../types";
 
@@ -16,11 +10,11 @@ export function Component(): JSX.Element {
       headerText: "Project overview",
       paragraphText:
         "The goal of this project is to increase students' learning experience. To measure the usefulness and ease of use of the learning platform, we conducted an experiment in a class at one of the universities in Taiwan.",
-      images: [HomePage, ModulePage, ContentPage, QuizPage],
+    //   images: [HomePage, ModulePage, ContentPage, QuizPage],
     }),
     CreateContent({
       headerText: "Framework & Language",
-      tags: ["TypeScript", "React.js"],
+      tags: ["Android Studio", "Java"],
     }),
     CreateContent({
       headerText: "Results",
@@ -29,7 +23,7 @@ export function Component(): JSX.Element {
     }),
   ];
 
-  const project = GetProject("Development_of_an_Interactive_Learning_Platform", "Website");
+  const project = GetProject("Petopia", "Android");
   return (
     <>
       <TableOfContent contents={contents} />

@@ -39,7 +39,12 @@ export default function Navbar(): JSX.Element {
             >
               Website
             </li>
-            <li>Android</li>
+            <li
+              onClick={() => navigate(getBaseUrl("/android_project"))}
+              className="cursor-pointer"
+            >
+              Android
+            </li>
             <li>About me</li>
           </ul>
         </>

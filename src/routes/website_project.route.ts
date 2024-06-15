@@ -9,6 +9,9 @@ export const websiteProjectRoute: RouteObject[] = [
   },
   {
     path: websiteProject.Development_of_an_Interactive_Learning_Platform,
-    lazy: () => import("../pages/website_project/Development_of_an_Interactive_Learning_Platform"),
+    lazy: () =>
+      import(
+        "../pages/website_project/Development_of_an_Interactive_Learning_Platform"
+      ),
   },
 ];
